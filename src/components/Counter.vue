@@ -1,5 +1,5 @@
 <template>
-    <button id="btn" @click="onClick()">Click me</button> There have been {{ countNum }} clicks made.
+    <button id="btn" @click="onClick()">Click me</button> <span>There have been {{ countNum }} clicks made.</span>
 </template>
 
 <script>

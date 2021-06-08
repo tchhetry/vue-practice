@@ -6,7 +6,10 @@ module.exports = {
     browser
       .init()
       .waitForElementVisible("#app")
+      .assert.visible('button[id=btn]')
+      .assert.visible('span')
       .click('button[id=btn]')
+      .assert.containsText('span', 'There have been 1 clicks made.')
       .end();
   },
 };
